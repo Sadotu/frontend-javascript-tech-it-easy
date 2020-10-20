@@ -36,7 +36,6 @@ Check bij de pseudo-antwoorden of je geen stappen overgeslagen hebt. Begin dan p
 
 #### Opdracht 1 
 * **Opdracht 1a - JS: hoeveel exemplaren moeten we nog verkopen?**
-Schrijf een functie die een array van tv objecten verwacht en `voorraad - sold` optelt en in de console logt.
 * **Opdracht 1b - DOM**: Zorg ervoor dat dit aantal _in het rood_ wordt weergegeven op de pagina
 
 #### Opdracht 2 - JS
