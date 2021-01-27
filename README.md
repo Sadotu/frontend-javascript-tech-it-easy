@@ -39,9 +39,9 @@ Check bij de pseudo-antwoorden of je geen stappen overgeslagen hebt. Begin dan p
 * **Opdracht 1b:** Zorg ervoor dat dit aantal _in het rood_ wordt weergegeven op de pagina
 
 #### Opdracht 2
-* **Opdracht 2a:** Schrijf een functie die een array maakt van alle tv-type-namen.
-* **Opdracht 2b:** Schrijf een functie die alle tv's teruggeeft (de hele objecten) die volledig uitverkocht zijn.
-* **Opdracht 2c:** Schrijf een functie die alle tv's teruggeeft (de hele objecten) die over AmbiLight beschikken.
+* **Opdracht 2a:** Gebruik een array-methode om een array te maken met alle tv-type namen.
+* **Opdracht 2b:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die volledig uitverkocht zijn.
+* **Opdracht 2c:** Gebruik een array-methode om alle tv's te verzamelen (de hele objecten) die over AmbiLight beschikken.
 * **Opdracht 2d:** Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
 
 #### Opdracht 3
@@ -55,7 +55,7 @@ Geef de type-namen van **twee** tv's weer op de pagina. Welke tv's dat precies z
 Voor nu betekent dit dat je het appenden van de nodes twee keer moet uitschrijven, dat is niet erg!
 
 #### Opdracht 5
-We gaan de twee tv's van de vorige opdracht weergeven in het volgende format:
+We gaan één van de twee tv's van de vorige opdracht weergeven in het volgende format:
 
   ```
   Philips 43PUS6504/12 - 4K TV
@@ -74,19 +74,19 @@ Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
 * **Opdracht 5b:** Zorg ervoor dat de prijs van een tv netjes geformat wordt.
 Maak een functie die één tv-prijs als parameter verwacht (zoals `379`) en daar de volgende string van maakt: `€379,-`. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
 
-* **Opdracht 5c:** Zorg ervoor dat er een string wordt gegenereerd voor alle beschikbare schermgroottes in zowel inches als cm
+* **Opdracht 5c:** Zorg ervoor dat er een string wordt gegenereerd voor alle beschikbare schermgroottes van één tv in zowel inches als cm
 Maak een functie die één screen-sizes array verwacht en de groottes op de volgende manier samenvoegt: `[schermgrootte] inches ([schermgrootte omgerekend]cm) | [schermgrootte] inches ([schermgrootte omgerekend]cm)` etc.
 Dus een input van `[32]` geeft `32 inch (81 cm)` en een input van `[43, 50, 55, 58]` geeft `43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm)`. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken, 
 zowel voor tv's met maar één schermgrootte als met tientallen schermgroottes.
 
-* **Opdracht 5d:** Zorg ervoor de informatie van de twee tv's zoals het voorbeeld wordt weergegeven op de pagina.
-Het plaatsen van de informatie in de DOM schrijf je voor nu nog "handmatig" uit voor beide tv's. Je kunt echter wel telkens de functies gebruiken die je zojuist hebt geschreven, om onderdelen van de data te formatten.
+* **Opdracht 5d:** Zorg ervoor de informatie van één van de twee tv's zoals het voorbeeld wordt weergegeven op de pagina.
+Gebruik hiervoor de functies die je hebt gemaakt in opdracht 5a, 5b en 5c.
 
 * **Opdracht 5e:** Schrijf een functie die ALLE tv's weergeeft op de pagina zoals in het voorbeeld.
 Dit wil je natuurlijk niet acht keer opnieuw schrijven, want nu zijn het 8 tv's, maar in de toekomst misschien wel 200! Gebruik in deze functie de voorgaande functies die je hebt geschreven, 
 om onderdelen van de data te formatten. Deze "tv-generator-functie" verwacht één parameter: de volledige array met tv-objecten. Vergeet 'm niet aan te roepen!
 
 #### Bonusopdracht
-Maak drie knoppen op de pagina: `Sorteer op prijs`, `AmbiLight TV's` en `Uitverkochte exemplaren`. Gebruik de functies die je in opdracht 2b, 2c en 2d hebt gemaakt en laat ze alleen de uitkomsten in de console loggen 
-als de gebruiker op de bijbehorende knop klikt.
+Maak drie knoppen op de pagina: `Sorteer op prijs`, `AmbiLight TV's` en `Uitverkochte exemplaren`. Gebruik de code die je in opdracht 2b, 2c en 2d hebt gemaakt en schrijf dit om naar functies zodat je ze kunt aanroepen
+op het moment dat de buttons geklikt worden. Zorg ervoor dat de functies de uitkomsten in de de console loggen als de gebruiker op de bijbehorende knop klikt.
 _Tip_: Google eens naar het `onclick` event van buttons!
