@@ -11,7 +11,7 @@ Je kunt er daarom vanuit gaan dat Tech It Easy pas voorraad aanvult als **alle p
 
 ![Tech it easy](./assets/tech_it_easy.png)
 
-In de `inventory` array (in `main.js`) vindt je 8 tv-objecten. Elk tv-object bevat de volgende informatie:
+In de `inventory` array (in `main.js`) vind je 8 tv-objecten. Elk tv-object bevat de volgende informatie:
 * `type` - het tv type
 * `brand` - het merk
 * `name` - de benaming
@@ -34,56 +34,59 @@ Check bij de pseudo-antwoorden of je geen stappen overgeslagen hebt. Begin dan p
 
 ### Functionaliteit bouwen
 
-#### Opdracht 1 
-* **Opdracht 1a - JS:** Hoeveel exemplaren moeten we nog verkopen?
-* **Opdracht 1b - DOM:** Zorg ervoor dat dit aantal _in het rood_ wordt weergegeven op de pagina
+#### Opdracht 1
+* **Opdracht 1a:** Hoeveel exemplaren moeten we nog verkopen? Schrijf een functie die dit berekent.
+* **Opdracht 1b:** Zorg ervoor dat dit aantal _in het rood_ wordt weergegeven op de pagina
 
 #### Opdracht 2
-* **Opdracht 2a - JS:** log alle tv typen in de console.
-* **Opdracht 2b - JS:** log de gegevens van alle typen tv's die al volledig uitverkocht zijn in de console
-* **Opdracht 2c - JS:** log de gegevens van alle typen tv's die over AmbiLight beschikken in de console
-* **Opdracht 2d - JS:** Sorteer de tv's van laagste naar hoogste prijs en log dit in de console
+* **Opdracht 2a:** Schrijf een functie die een array maakt van alle tv-type-namen.
+* **Opdracht 2b:** Schrijf een functie die alle tv's teruggeeft (de hele objecten) die volledig uitverkocht zijn.
+* **Opdracht 2c:** Schrijf een functie die alle tv's teruggeeft (de hele objecten) die over AmbiLight beschikken.
+* **Opdracht 2d:** Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
 
 #### Opdracht 3
-Geef de type-namen van de eerste **twee** tv's weer op de pagina. Welke tv's dat precies zijn, maakt niet zoveel uit. 
-Voor nu betekent dit dat je het appenden van de nodes twee keer moet uitschrijven, dat is niet erg!
+* **Opdracht 3a:** Wat is onze doel-opbrengst?
+Bereken wat de totale opbrengst is, als we alle exemplaren van ieder type zouden verkopen. Geef dit in het **blauw** weer op de pagina.
+* **Opdracht 6b:** Hoeveel hebben we tot nu toe verdient?
+Bereken hoeveel we tot nu toe verdient hebben met het aantal verkochte tv's. Geef dit weer in het **groen** weer op de pagina
 
 #### Opdracht 4
-We gaan de eerste twee tv's weergeven in het volgende format:
-  
+Geef de type-namen van **twee** tv's weer op de pagina. Welke tv's dat precies zijn, maakt niet zoveel uit. 
+Voor nu betekent dit dat je het appenden van de nodes twee keer moet uitschrijven, dat is niet erg!
+
+#### Opdracht 5
+We gaan de twee tv's van de vorige opdracht weergeven in het volgende format:
+
   ```
   Philips 43PUS6504/12 - 4K TV
   €379,-
   43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm)
-  Beschikt over wifi en hdr
   
   NIKKEI NH3216SMART - HD smart TV
   €159,-
   32 inch (81 cm)
-  Beschikt over wifi, hdr en bluetooth
   ```
 
-* **Opdracht 4a - JS: Zorg ervoor dat er een string wordt gegenereerd voor de tv namen.**
-Voeg de naam op de volgende manier samen: `[merk] [type] - [naam]` zoals `Philips 43PUS6504/12 - 4K TV` of `NIKKEI NH3216SMART - HD smart TV`.
-Stop dit in een aparte functie die je voor beide tv's kunt gebruiken.
-* **Opdracht 4b - JS: Zorg ervoor dat er een string wordt gegenereerd voor alle opties die op deze tv zitten**
-Voeg de opties met waarde `true` op de volgende manier samen: `Beschikt over wifi en hdr` of `Beschikt over wifi, hdr en bluetooth`.
-Stop dit in een aparte functie die je voor beide tv's kunt gebruiken.
-* **Opdracht 4c - JS: Zorg ervoor dat er een string wordt gegenereerd voor alle beschikbare schermgroottes in zowel inches als cm**
-Voeg de groottes op de volgende manier samen: `[schermgrootte] inches ([schermgrootte omgerekend]cm) | [schermgrootte] inches ([schermgrootte omgerekend]cm)` etc.
-Stop dit in een aparte functie die je voor beide tv's kunt gebruiken.
-* **Opdracht 4d - DOM: Zorg ervoor de informatie op de juiste manier op de pagina wordt weergegeven.**
+* **Opdracht 5a:** Zorg ervoor dat er een string wordt gegenereerd voor de naam van een tv.
+Maak een functie die één tv-object als parameter verwacht en de naam op de volgende manier samenvoegt: `[merk] [type] - [naam]` zoals `Philips 43PUS6504/12 - 4K TV` of `NIKKEI NH3216SMART - HD smart TV`.
+Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
 
-#### Opdracht 5
-Gebruik de functies die je in de vorige opdracht hebt gemaakt om ALLE tv's weer te geven op de pagina in het juiste format, 
-zonder dit letterlijk acht keer voor iedere tv uit te schrijven. De prijs moet er ook nog bij.
+* **Opdracht 5b:** Zorg ervoor dat de prijs van een tv netjes geformat wordt.
+Maak een functie die één tv-prijs als parameter verwacht (zoals `379`) en daar de volgende string van maakt: `€379,-`. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken.
 
-#### Opdracht 6
-* **Opdracht 6a - JS & DOM:** wat is de totale opbrengst, als we alle exemplaren van ieder type zouden verkopen?
-Bereken dit en geef het weer op de pagina.
-* **Opdracht 6a - JS & DOM:** hoeveel hebben we tot nu toe verdient? Bereken dit en geef het weer op de pagina
+* **Opdracht 5c:** Zorg ervoor dat er een string wordt gegenereerd voor alle beschikbare schermgroottes in zowel inches als cm
+Maak een functie die één screen-sizes array verwacht en de groottes op de volgende manier samenvoegt: `[schermgrootte] inches ([schermgrootte omgerekend]cm) | [schermgrootte] inches ([schermgrootte omgerekend]cm)` etc.
+Dus een input van `[32]` geeft `32 inch (81 cm)` en een input van `[43, 50, 55, 58]` geeft `43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm)`. Zorg ervoor dat je deze functie voor iedere tv zou kunnen gebruiken, 
+zowel voor tv's met maar één schermgrootte als met tientallen schermgroottes.
 
-#### Opdracht 7 (bonus)
-Maak drie knoppen op de pagina: `Sorteer op prijs`, `AmbiLight TV's` en `Uitverkochte exemplaren`. 
-Gebruik de functies die je in opdracht 2b, 2c en 2d hebt gemaakt en laat ze alleen de uitkomsten in de console
-loggen als de gebruiker op de bijbehorende knop klikt. _Tip_: Google eens naar het `onclick` event van buttons
+* **Opdracht 5d:** Zorg ervoor de informatie van de twee tv's zoals het voorbeeld wordt weergegeven op de pagina.
+Het plaatsen van de informatie in de DOM schrijf je voor nu nog "handmatig" uit voor beide tv's. Je kunt echter wel telkens de functies gebruiken die je zojuist hebt geschreven, om onderdelen van de data te formatten.
+
+* **Opdracht 5e:** Schrijf een functie die ALLE tv's weergeeft op de pagina zoals in het voorbeeld.
+Dit wil je natuurlijk niet acht keer opnieuw schrijven, want nu zijn het 8 tv's, maar in de toekomst misschien wel 200! Gebruik in deze functie de voorgaande functies die je hebt geschreven, 
+om onderdelen van de data te formatten. Deze "tv-generator-functie" verwacht één parameter: de volledige array met tv-objecten. Vergeet 'm niet aan te roepen!
+
+#### Bonusopdracht
+Maak drie knoppen op de pagina: `Sorteer op prijs`, `AmbiLight TV's` en `Uitverkochte exemplaren`. Gebruik de functies die je in opdracht 2b, 2c en 2d hebt gemaakt en laat ze alleen de uitkomsten in de console loggen 
+als de gebruiker op de bijbehorende knop klikt.
+_Tip_: Google eens naar het `onclick` event van buttons!
