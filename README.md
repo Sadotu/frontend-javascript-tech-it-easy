@@ -27,9 +27,9 @@ In de `inventory` array (in `main.js`) vind je 8 tv-objecten. Elk tv-object beva
 
 ## Voor je begint
 1. Koppel jouw javaScript bestand met de HTML pagina. Doe dit ook voor het CSS bestand.
-2. Vergeet niet dat je bij iedere wijziging eerst moet opslaan en de browser moet refreshen.
-`Nodemon` is niet meer nodig omdat we JavaScript nu in de browser gaan gebruiken (waar het voor bedoeld is)
-2. Schrijf voor alle onderstaande opdrachten eerst **stap voor stap de psuedo-code uit**. 
+2. Vergeet niet dat je bij iedere wijziging eerst moet opslaan en de browser moet refreshen. `Nodemon` is niet meer nodig omdat we JavaScript nu in de browser gaan gebruiken (waar het voor bedoeld is)
+3. Voel je vrij om extra `.js` bestanden aan te maken en de code te splitsen als het te groot wordt, als dat het voor jou overzichtelijker maakt!
+4. Schrijf voor alle onderstaande opdrachten eerst **stap voor stap de psuedo-code uit**. 
 Check bij de pseudo-antwoorden of je geen stappen overgeslagen hebt. Begin dan pas met programmeren.
 
 ### Functionaliteit bouwen
