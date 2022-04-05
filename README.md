@@ -102,7 +102,7 @@ Maak deze gehele opdracht eerst alsof je het voor één tv doet. We gaan één t
   Test of jouw functie werkt in alle mogelijke gevallen.
 
 * **Opdracht 4d:** Zorg ervoor de informatie van één van de tv's zoals het voorbeeld wordt weergegeven op de pagina.
-  Gebruik hiervoor de functies die je hebt gemaakt in opdracht 5a, 5b en 5c.
+  Gebruik hiervoor de functies die je hebt gemaakt in opdracht 4a, 4b en 4c.
 
 * **Opdracht 4e:** Schrijf een functie die ALLE tv's weergeeft op de pagina zoals in het voorbeeld. Dit wil je
   natuurlijk niet acht keer opnieuw schrijven, want nu zijn het 8 tv's, maar in de toekomst misschien wel 200!
