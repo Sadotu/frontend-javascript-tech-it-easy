@@ -223,7 +223,7 @@ locationBought.innerHTML = `Amount of TV's bought: <span class="blue-text">${bou
 
 // Opdracht 2e
 const locationInStock = document.getElementById('in-stock');
-locationInStock.innerHTML = `Amount of TV's in stock: <span class="red-text">${bought - sold}</span`;
+locationInStock.innerHTML = `Amount of TV's in stock: <span class="red-text">${bought - sold}</span>`;
 
 // Opdracht 3a & b
 
@@ -237,8 +237,9 @@ function brands(inventory) {
     return brands
 }
 
-
-console.log(brands(inventory))
+const locationBrands = document.getElementById('brands');
+const brandsList = brands(inventory).map(brand => `<li>${brand}</li>`).join('');
+locationBrands.innerHTML = `Brands: <ul>${brandsList}</ul>`;
 
 // Opdracht 4a
 
