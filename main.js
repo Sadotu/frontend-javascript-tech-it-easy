@@ -178,13 +178,7 @@ const soldOut = inventory.filter(tv => {
 console.log(soldOut)
 
 // Opdracht 1c
-let ambiLight = []
-
-inventory.filter(tv => {
-    if (tv.options.ambiLight === true) {
-        ambiLight.push(tv)
-    }
-})
+const ambiLight = inventory.filter(tv => tv.options.ambiLight);
 
 console.log(ambiLight)
 
