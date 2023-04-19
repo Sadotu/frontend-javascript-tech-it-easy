@@ -218,11 +218,7 @@ locationInStock.innerHTML = `Amount of TV's in stock: <span class="red-text">${b
 // Opdracht 3a & b
 
 function brands(inventory) {
-    let brands = []
-
-    inventory.map(brand => {
-        brands.push(brand.brand)
-    })
+    const brands = inventory.map(brand => brand.brand);
 
     return brands
 }
