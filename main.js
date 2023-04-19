@@ -171,12 +171,8 @@ inventory.map(item => {
 console.log(tvNames)
 
 // Opdracht 1b
-let soldOut = []
-
-inventory.filter(tv => {
-    if (tv.originalStock - tv.sold <= 0) {
-        soldOut.push(tv)
-    }
+const soldOut = inventory.filter(tv => {
+    return tv.originalStock === tv.sold;
 })
 
 console.log(soldOut)
